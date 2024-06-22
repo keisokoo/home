@@ -35,6 +35,8 @@ jobs:
         run: |
           npm install
           npm run build
+      - name: Copy 404.html to build directory
+        run: cp build/client/index.html build/client/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
