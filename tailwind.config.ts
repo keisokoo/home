@@ -80,6 +80,18 @@ export default {
         "info-light": colorVariables.Blue200,
         "info-dark": colorVariables.Blue700,
       },
+      height: {
+        "100vh": "100vh",
+        "100svh": "100svh",
+        "100lvh": "100lvh",
+        "100dvh": "100dvh",
+      },
+      width: {
+        "100vw": "100vw",
+        "100svw": "100svw",
+        "100lvw": "100lvw",
+        "100dvw": "100dvw",
+      },
     },
   },
   plugins: [],

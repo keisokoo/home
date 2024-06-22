@@ -36,6 +36,10 @@ export default function App() {
   );
 }
 
-export function HydrateFallback() {
-  return <p>Loading...</p>;
-}
+// export function HydrateFallback() {
+//   return (
+//     <div className="w-100dvh h-100dvh flex items-center justify-center">
+//       <div>Loading...</div>
+//     </div>
+//   );
+// }
