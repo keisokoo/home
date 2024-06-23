@@ -6,9 +6,9 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import "~/styles/layers.css";
+import "~/styles/reset.css";
 import Nav from "./layout/Nav";
 import { themeClass } from "./styles/theme.css";
-import "./tailwind.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

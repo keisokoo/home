@@ -65,3 +65,9 @@ export const globalAppStyle = (selector: string, rule: GlobalStyleRule) =>
       [layers.app]: rule,
     },
   });
+export const globalResetStyle = (selector: string, rule: GlobalStyleRule) =>
+  globalStyle(selector, {
+    "@layer": {
+      [layers.reset]: rule,
+    },
+  });

@@ -6,8 +6,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="p-4 font-4">
-      <h1 className="text-16px">KEISOKOO</h1>
+    <div>
+      <h1>KEISOKOO</h1>
     </div>
   );
 }
