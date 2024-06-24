@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { Link } from "@remix-run/react";
 import { useRef, useState } from "react";
-import styles from "./styles.css";
+import style from "./style.css";
 
 const navItems = [
   {
@@ -50,7 +50,7 @@ export default function Nav() {
   };
   return (
     <nav
-      className={styles.wrap}
+      className={style.wrap}
       ref={scrollContainerRef}
       onMouseDown={onMouseDown}
       onMouseLeave={onMouseLeave}
@@ -60,12 +60,12 @@ export default function Nav() {
         cursor: isDragging ? "grabbing" : "grab",
       }}
     >
-      <ul className={styles.list}>
+      <ul className={style.list}>
         {navItems.map((item) => (
           <li key={item.url}>
             <Link
               to={item.url}
-              className={styles.item}
+              className={style.item}
               style={{
                 pointerEvents: dragged ? "none" : "auto",
               }}

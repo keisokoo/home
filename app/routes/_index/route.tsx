@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import styles from "./styles.css";
+import style from "./style.css";
 
 export const meta: MetaFunction = () => {
   return [{ title: "KEISOKOO" }, { name: "description", content: "" }];
@@ -7,8 +7,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className={styles.wrap}>
-      <h1 className={styles.title}>KEISOKOO</h1>
+    <div className={style.wrap}>
+      <h1 className={style.title}>KEISOKOO</h1>
     </div>
   );
 }

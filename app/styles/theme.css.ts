@@ -1,57 +1,6 @@
 import { createTheme } from "@vanilla-extract/css";
 import { colors } from "./colors.css";
 
-export const sizes = {
-  space: {
-    1: "4px",
-    2: "8px",
-    3: "12px",
-    4: "16px",
-    5: "20px",
-    6: "24px",
-    7: "28px",
-    8: "32px",
-    9: "36px",
-    10: "40px",
-  },
-  size: {
-    1: "12px",
-    2: "14px",
-    3: "16px",
-    4: "20px",
-    5: "24px",
-    6: "32px",
-    7: "48px",
-    8: "64px",
-    9: "96px",
-    10: "128px",
-  },
-  radius: {
-    1: "4px",
-    2: "8px",
-    3: "12px",
-    4: "16px",
-    5: "20px",
-    6: "24px",
-    7: "28px",
-    8: "32px",
-    9: "36px",
-    10: "40px",
-  },
-  duration: {
-    1: "100ms",
-    2: "200ms",
-    3: "300ms",
-    4: "400ms",
-    5: "500ms",
-    6: "600ms",
-    7: "700ms",
-    8: "800ms",
-    9: "900ms",
-    10: "1000ms",
-  },
-};
-
 export const [themeClass, vars] = createTheme({
   color: {
     text: colors.text,
