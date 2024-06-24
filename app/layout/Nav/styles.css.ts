@@ -1,5 +1,4 @@
 import { appStyles } from "~/styles/helper.css";
-import { vars } from "~/styles/theme.css";
 import { flex } from "~/utils/styles";
 
 const styles = appStyles({
@@ -14,7 +13,7 @@ const styles = appStyles({
     ...flex("row"),
   },
   item: {
-    padding: `${vars.space[2]} ${vars.space[4]}`,
+    padding: `8px 16px`,
   },
 });
 export default styles;

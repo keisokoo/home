@@ -5,8 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import "~/styles/layers.css";
-import "~/styles/reset.css";
+import "~/styles/global.css";
 import Nav from "./layout/Nav";
 import { themeClass } from "./styles/theme.css";
 
