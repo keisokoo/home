@@ -1,18 +1,10 @@
 import { globalResetStyle } from "./helper.css";
 
-globalResetStyle("*", {
+globalResetStyle("* ::before, * ::after", {
   boxSizing: "border-box",
   borderWidth: 0,
   borderStyle: "solid",
   borderColor: "#e5e7eb",
-});
-
-globalResetStyle("::before, ::after", {
-  boxSizing: "border-box",
-  borderWidth: 0,
-  borderStyle: "solid",
-  borderColor: "#e5e7eb",
-  content: "''",
 });
 
 globalResetStyle("html, :host", {
@@ -21,8 +13,8 @@ globalResetStyle("html, :host", {
   MozTabSize: 4,
   OTabSize: 4,
   tabSize: 4,
-  fontFamily:
-    'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+  fontFamily: `"Roboto Condensed", "Pretendard Variable", sans-serif`,
+  fontOpticalSizing: `auto`,
   fontFeatureSettings: "normal",
   fontVariationSettings: "normal",
   WebkitTapHighlightColor: "transparent",

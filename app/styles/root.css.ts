@@ -1,12 +1,30 @@
 import { globalStyle } from "@vanilla-extract/css";
+import { appStyles } from "./helper.css";
 import { global } from "./layers.css";
 import { vars } from "./theme.css";
+
+export const bodyStyle = appStyles({
+  font: {
+    fontSize: "16px",
+  },
+  main: {
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100vh",
+  },
+  header: {},
+  content: {
+    flex: 1,
+    padding: "1.2rem",
+  },
+});
 
 globalStyle("html, body", {
   "@layer": {
     [global]: {
       color: vars.color.text,
       backgroundColor: vars.color.background,
+      minHeight: "100%",
     },
   },
 });

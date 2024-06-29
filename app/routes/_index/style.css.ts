@@ -5,11 +5,9 @@ const styles = appStyles({
   wrap: {
     display: "flex",
     flexDirection: "column",
-    gap: "16px",
-    padding: "16px",
   },
   title: {
-    fontSize: "24px",
+    fontSize: "1.8rem",
     fontWeight: "bold",
     color: vars.color.warning,
   },
